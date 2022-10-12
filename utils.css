@@ -1,0 +1,28 @@
+/* Colors */
+:root {
+  --main-orange: #f2994a;
+}
+
+/* flex-blox */
+
+.d-flex-row {
+  display: flex;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex-row-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex-col-cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
