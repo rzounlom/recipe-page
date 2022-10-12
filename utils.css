@@ -1,28 +1,47 @@
-/* Colors */
-:root {
-  --main-orange: #f2994a;
-}
-
 /* flex-blox */
 
+/* flex direction row */
 .d-flex-row {
   display: flex;
+  justify-content: center;
 }
 
+.d-flex-row-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex-row-fs-fs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* flex direction column */
 .d-flex-col {
   display: flex;
   flex-direction: column;
-}
-
-.d-flex-row-cc {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.d-flex-col-cc {
+.d-flex-col-c-c {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.d-flex-col-sb-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-flex-col-c-fs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }

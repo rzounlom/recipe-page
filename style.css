@@ -4,9 +4,130 @@
   box-sizing: border-box;
 }
 
+/* Colors */
+:root {
+  --main-orange: #f2994a;
+  --text-color: #333333;
+  --faded-text-dark: #4f4f4f;
+  --faded-text-md: #828282;
+  --faded-text-light: #bdbdbd;
+}
+
 body {
   background-color: white;
   font-size: 14px;
-  color: black;
+  color: var(--text-color);
   font-weight: 400;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  max-width: 1440px;
+  padding: 11px;
+  border: 0.01px solid lightgray;
+}
+
+/* 
+-------------
+Header styles
+-------------
+ */
+
+header {
+  height: 75vh;
+  max-height: 700px;
+  width: 100%;
+}
+
+header > .title {
+  height: 30%;
+  width: 100%;
+  max-width: 969px;
+}
+
+header > .title > h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: "Playfair Display";
+  color: black;
+}
+
+header > .title > .description-container {
+  margin-top: 12px;
+}
+
+header > .title > .description-container > img {
+  margin-top: 5px;
+}
+
+header > .title > .description-container > .description {
+  max-width: 592px;
+  margin-left: 8px;
+  color: var(--faded-text-dark);
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+}
+
+header > .recipe-img {
+  height: 85%;
+  width: 100%;
+  max-height: 470px;
+  max-width: 969px;
+}
+
+header > .recipe-img > img {
+  height: 100%;
+  width: 100%;
+}
+
+/* 
+-------------
+Main styles
+-------------
+ */
+
+/* 
+-------------
+Media queries
+-------------
+ */
+
+/* Tablet */
+@media (max-width: 768px) {
+  header > .title > .description-container > .description {
+    max-width: 400px;
+  }
+}
+
+/* Mobile lg */
+@media (max-width: 540px) {
+  header > .title > h2 {
+    font-size: 30px;
+  }
+
+  header > .title > .description-container > .description {
+    max-width: 360px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 414px) {
+  header {
+    max-height: 450px;
+  }
+
+  header > .recipe-img {
+    max-height: 300px;
+  }
+
+  header > .title > h2 {
+    font-size: 25px;
+  }
+
+  header > .title > .description-container > .description {
+    max-width: 320px;
+  }
 }
