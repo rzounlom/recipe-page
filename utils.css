@@ -1,6 +1,5 @@
-/* flex-blox */
-
 /* flex direction row */
+
 .d-flex-row {
   display: flex;
   justify-content: center;
@@ -16,6 +15,18 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.d-flex-row-fs-c {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.d-flex-row-sb-ac {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* flex direction column */

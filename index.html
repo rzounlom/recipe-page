@@ -16,6 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Recipe Page</title>
   </head>
   <body class="d-flex-row">
@@ -36,7 +43,90 @@
           <img src="./assets/img/photo1.png" alt="classic cheesecake" />
         </div>
       </header>
-      <main class="d-flex-col">Main</main>
+      <main class="d-flex-row">
+        <div class="cooking-instructions">
+          <div class="cooking-outline-mobile">
+            <div class="servings d-flex-row-fs-c">
+              <div class="instruction-icon active">
+                <i class="fa-solid fa-utensils fa-xl"></i>
+              </div>
+              <div class="cooking-instruction-text">
+                <p>Yields</p>
+                <p class="active">12 Servings</p>
+              </div>
+            </div>
+            <div class="time d-flex-row-sb-ac">
+              <div class="cooking-instruction d-flex-row-fs-c">
+                <div class="instruction-icon">
+                  <i class="fa-regular fa-clock fa-xl"></i>
+                </div>
+                <div class="cooking-instruction-text">
+                  <p>Prep time</p>
+                  <p>45 minutes</p>
+                </div>
+              </div>
+              <div class="cooking-instruction d-flex-row-fs-c">
+                <div class="instruction-icon">
+                  <i class="fa-regular fa-clock fa-xl"></i>
+                </div>
+                <div class="cooking-instruction-text">
+                  <p>Cook time</p>
+                  <p>1 hour</p>
+                </div>
+              </div>
+              <div class="cooking-instruction d-flex-row-fs-c">
+                <div class="instruction-icon">
+                  <i class="fa-regular fa-clock fa-xl"></i>
+                </div>
+                <div class="cooking-instruction-text">
+                  <p>Total time</p>
+                  <p>1.45 hours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cooking-ingredients d-flex-col-c-fs">Ingredients</div>
+          <div class="cooking-instructions">Instructions</div>
+        </div>
+        <div class="cooking-outline d-flex-col-sb-c">
+          <div class="cooking-instruction d-flex-row-c-c">
+            <div class="instruction-icon active">
+              <i class="fa-solid fa-utensils fa-xl"></i>
+            </div>
+            <div class="cooking-instruction-text">
+              <p>Yields</p>
+              <p class="active">12 Servings</p>
+            </div>
+          </div>
+          <div class="cooking-instruction d-flex-row-c-c">
+            <div class="instruction-icon">
+              <i class="fa-regular fa-clock fa-xl"></i>
+            </div>
+            <div class="cooking-instruction-text">
+              <p>Prep time</p>
+              <p>45 minutes</p>
+            </div>
+          </div>
+          <div class="cooking-instruction d-flex-row-c-c">
+            <div class="instruction-icon">
+              <i class="fa-regular fa-clock fa-xl"></i>
+            </div>
+            <div class="cooking-instruction-text">
+              <p>Cook Time</p>
+              <p>1 hour</p>
+            </div>
+          </div>
+          <div class="cooking-instruction d-flex-row-c-c">
+            <div class="instruction-icon">
+              <i class="fa-regular fa-clock fa-xl"></i>
+            </div>
+            <div class="cooking-instruction-text">
+              <p>Total Time</p>
+              <p>1.45 hours</p>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>

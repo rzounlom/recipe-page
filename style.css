@@ -8,6 +8,7 @@
 :root {
   --main-orange: #f2994a;
   --text-color: #333333;
+  --dark-text: #333333;
   --faded-text-dark: #4f4f4f;
   --faded-text-md: #828282;
   --faded-text-light: #bdbdbd;
@@ -22,11 +23,11 @@ body {
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   max-width: 1440px;
   padding: 11px;
-  border: 0.01px solid lightgray;
+  max-width: 969px;
 }
 
 /* 
@@ -44,7 +45,6 @@ header {
 header > .title {
   height: 30%;
   width: 100%;
-  max-width: 969px;
 }
 
 header > .title > h2 {
@@ -94,7 +94,98 @@ main {
   width: 100%;
   margin-top: 50px;
   min-height: 50vh;
-  border: 0.01px solid lightgray;
+  /* border: 0.01px solid lightgray; */
+}
+
+main > .cooking-instructions {
+  width: 100%;
+  /* border: 1px solid lightgray; */
+}
+
+main > .cooking-instructions > .cooking-outline-mobile {
+  width: 100%;
+  border: 1px solid lightgray;
+  display: none;
+}
+
+main > .cooking-ingredients {
+  width: 70%;
+  border: 1px solid lightgray;
+}
+
+main > .cooking-outline {
+  width: 30%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 216px;
+  height: 367px;
+  padding: 50px 30px;
+}
+
+.cooking-outline > .cooking-instruction {
+  height: 25%;
+  color: var(--dark-text);
+  width: 100%;
+}
+
+.active {
+  color: var(--main-orange);
+}
+
+.cooking-outline > .cooking-instruction > .instruction-icon {
+  width: 30%;
+}
+
+.cooking-outline > .cooking-instruction > .coooking-instruction-text {
+  width: 70%;
+}
+
+.cooking-outline
+  > .cooking-instruction
+  > .cooking-instruction-text
+  > p:first-of-type {
+  text-transform: uppercase;
+  color: var(--faded-text-light);
+}
+
+.cooking-outline-mobile {
+  height: 100px;
+  border: 1px solid lightgray;
+}
+
+.cooking-outline-mobile > .servings,
+.cooking-outline-mobile > .time {
+  height: 50%;
+  width: 100%;
+}
+
+.cooking-outline-mobile
+  > .time
+  > .cooking-instruction
+  > .cooking-instruction-text
+  > p:first-of-type,
+.cooking-outline-mobile
+  > .servings
+  > .cooking-instruction
+  > .cooking-instruction-text
+  > p:first-of-type {
+  text-transform: uppercase;
+  color: var(--faded-text-light);
+}
+
+.cooking-outline-mobile > .servings > .cooking-instruction-text {
+  margin-left: 10px;
+}
+
+.cooking-outline-mobile > .time > .cooking-instruction {
+  width: 33.3%;
+}
+
+.cooking-outline-mobile
+  > .time
+  > .cooking-instruction
+  > .cooking-instruction-text {
+  margin-left: 10px;
 }
 
 /* 
@@ -131,6 +222,14 @@ Media queries
 
   header > .title > .description-container > .description {
     max-width: 360px;
+  }
+
+  main > .cooking-outline {
+    display: none;
+  }
+
+  main > .cooking-instructions > .cooking-outline-mobile {
+    display: inherit;
   }
 }
 
