@@ -185,6 +185,27 @@ main > .cooking-outline {
   margin-left: 10px;
 }
 
+.cooking-ingredients > .ingredient {
+  width: 100%;
+}
+
+.cooking-ingredients > .ingredient > .title,
+.cooking-ingredients > .ingredient > .details {
+  margin-top: 20px;
+}
+
+.cooking-ingredients > .ingredient > .title {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.cooking-ingredients > .ingredient > .details > .details-text {
+  margin-left: 10px;
+  line-height: 1.2em;
+}
+
 /* 
 -------------
 Media queries
@@ -227,6 +248,10 @@ Media queries
 
   main > .cooking-instructions > .cooking-outline-mobile {
     display: inherit;
+  }
+
+  main > .cooking-instructions > .cooking-ingredients {
+    margin-top: 20px;
   }
 }
 
