@@ -99,12 +99,10 @@ main {
 
 main > .cooking-instructions {
   width: 100%;
-  /* border: 1px solid lightgray; */
 }
 
 main > .cooking-instructions > .cooking-outline-mobile {
   width: 100%;
-  border: 1px solid lightgray;
   display: none;
 }
 
@@ -150,7 +148,6 @@ main > .cooking-outline {
 
 .cooking-outline-mobile {
   height: 100px;
-  border: 1px solid lightgray;
 }
 
 .cooking-outline-mobile > .servings,
