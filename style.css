@@ -22,6 +22,10 @@ body {
   overflow-y: auto;
 }
 
+a {
+  color: var(--faded-text-dark);
+}
+
 .container {
   min-height: 100vh;
   width: 100vw;
@@ -204,6 +208,47 @@ main > .cooking-outline {
 .cooking-ingredients > .ingredient > .details > .details-text {
   margin-left: 10px;
   line-height: 1.2em;
+}
+
+.cooking-instructions {
+  margin-top: 25px;
+}
+
+.cooking-instructions > .instruction-section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cooking-instructions > .instruction-section > .number {
+  height: 36px;
+  width: 36px;
+  background-color: var(--main-orange);
+  border-radius: 6px;
+  color: white;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.cooking-instructions > .instruction-section > .description {
+  height: 100%;
+  width: 95%;
+  padding: 0px 10px;
+}
+
+/* 
+-------------
+Footer styles
+-------------
+ */
+
+footer {
+  height: 50px;
+  width: 100%;
+}
+
+footer > a {
+  margin: 0px 3px;
 }
 
 /* 
