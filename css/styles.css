@@ -112,7 +112,40 @@ header .header-content .prep-time li {
   font-size: 1.2rem;
 }
 
-/* Desktop */
+/* Main */
+
+/* Media Queries */
+
+/* Tablet  */
+@media (min-width: 768px) {
+  .recipe-card,
+  img {
+    border-radius: 20px;
+  }
+
+  .recipe-card {
+    padding: 3%;
+    min-height: 100vh;
+  }
+
+  header {
+    height: 80vh;
+  }
+
+  header .header-content .heading {
+    font-size: 1.5rem;
+  }
+
+  header .header-content .heading h1 {
+    margin-top: 20px;
+  }
+
+  header .header-content .desc {
+    font-size: 1.5rem;
+  }
+}
+
+/* Desktop  */
 @media (min-width: 900px) {
   .container {
     display: flex;
@@ -120,8 +153,12 @@ header .header-content .prep-time li {
     align-items: center;
   }
 
-  .recipe-card,
-  img {
-    border-radius: 20px;
+  .recipe-card {
+    min-height: 50vh;
+    margin-top: 50px;
+  }
+
+  header {
+    height: 90vh;
   }
 }

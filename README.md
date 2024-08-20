@@ -46,6 +46,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [How to reference .ttf](https://www.geeksforgeeks.org/how-to-include-a-font-ttf-using-css/) - This showed me how to reference the .ttf files in my stylesheet
+- [CSS varables](https://elementor.com/blog/variables-in-css/?utm_source=google&utm_medium=cpc&utm_campaign=10759652828&utm_term=&lang=&gad_source=1&gclid=Cj0KCQjw2ou2BhCCARIsANAwM2G6OrJhY-17mmxPU5ziF3M3UvUko-dATsTeuxM0aHfo2dEGas8Re-YaAj9jEALw_wcB) - This showed me how to use CSS varialbes
 - [Responsively App](https://responsively.app/download) - This app makes it easy to view multiple device layouts at once.
 
 ## Author
