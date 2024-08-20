@@ -23,8 +23,9 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://your-solution-url.com)
+- Live Site URL: (https://your-live-site-url.com)
+- Gituhb Repo URL: (https://github.com/ZounMedia/recipe-page)
 
 ## My process
 
@@ -49,5 +50,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Romaric Zounlome](https://www.your-site.com)
-- Frontend Mentor - [@rzounlom](https://www.frontendmentor.io/profile/yourusername)
+- Github - [Romaric Zounlome](https://github.com/ZounMedia)
+- Frontend Mentor - [@rzounlom](https://www.frontendmentor.io/profile/rzounlom)

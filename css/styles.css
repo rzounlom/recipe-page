@@ -1,0 +1,126 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Varables */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+/* Font Family import*/
+@font-face {
+  font-family: youngSerif;
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: outfit;
+  src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: outfit, sans-serif;
+  font-size: 16px;
+  color: var(--stone-600);
+}
+
+/* Container */
+.container {
+  min-height: 100vh;
+  background-color: var(--stone-100);
+}
+
+/* Header */
+.recipe-card {
+  background-color: var(--white);
+  max-width: 800px;
+}
+
+header {
+  width: 100%;
+  height: 90vh;
+}
+
+.header-img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+header .header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header .header-content {
+  padding: 15px;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+header .header-content .heading {
+  margin-top: 5px;
+  height: 20%;
+  font-family: youngSerif;
+  line-height: 1;
+  color: var(--stone-900);
+}
+
+header .header-content .desc {
+  font-size: 1.1rem;
+  text-align: left;
+  height: 35%;
+}
+
+header .header-content .prep-time {
+  background-color: var(--rose-50);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: left;
+  height: 45%;
+}
+
+header .header-content .prep-time h3 {
+  color: var(--rose-800);
+}
+
+header .header-content .prep-time ul {
+  padding: 10px 5% 0 5%;
+  margin-left: 10px;
+}
+
+header .header-content .prep-time li {
+  padding-top: 5px;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recipe-card,
+  img {
+    border-radius: 20px;
+  }
+}
