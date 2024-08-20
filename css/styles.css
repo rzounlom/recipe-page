@@ -132,6 +132,9 @@ header .header-content .prep-time li {
     height: 80vh;
   }
 
+  header .header-content {
+    padding: 0;
+  }
   header .header-content .heading {
     font-size: 1.5rem;
   }
