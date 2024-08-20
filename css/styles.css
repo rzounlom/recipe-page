@@ -112,6 +112,7 @@ header .header-content .prep-time li {
   font-size: 1.2rem;
 }
 
+/* Desktop */
 @media (min-width: 900px) {
   .container {
     display: flex;
