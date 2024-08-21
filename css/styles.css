@@ -10,6 +10,7 @@
 :root {
   --white: hsl(0, 0%, 100%);
   --stone-100: hsl(30, 54%, 90%);
+  --stone-100-fade: hsla(30, 54%, 90%, 0.9);
   --stone-150: hsl(30, 18%, 87%);
   --stone-600: hsl(30, 10%, 34%);
   --stone-900: hsl(24, 5%, 18%);
@@ -98,7 +99,8 @@ header {
   height: 45%;
 }
 
-.header-content .prep-time h3 {
+.header-content .prep-time h3,
+.header-content .prep-time li::marker {
   color: var(--rose-800);
 }
 
@@ -113,11 +115,71 @@ header {
 }
 
 /* Main */
+section {
+  min-height: 35vh;
+  padding: 15px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--brown-800);
+}
+
+section .content {
+  margin-top: 20px;
+}
+
+section .content ul,
+section .content ol {
+  margin-left: 25px;
+}
+
+section .content li {
+  margin-top: 15px;
+  padding: 0 20px 0 20px;
+}
+
+section .content ul li::marker,
+section .content ol li::marker {
+  margin-top: 15px;
+  color: var(--brown-800);
+}
+
+section .content p {
+  padding-right: 5px;
+}
+
+section .content .table {
+  margin-top: 15px;
+}
+
+section .content .table .table-item {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid var(--stone-100-fade);
+}
+
+section .content .table .table-item:last-of-type {
+  border-bottom: none;
+}
+
+section .content .table .table-item strong {
+  color: var(--brown-800);
+}
+
+section hr {
+  color: var(--stone-100);
+  margin-top: 35px;
+  opacity: 0.4;
+}
 
 /* Media Queries */
 
 /* Tablet  */
 @media (min-width: 768px) {
+  /* Header */
   .recipe-card,
   img {
     border-radius: 20px;
@@ -144,6 +206,15 @@ header {
   .header-content .heading h1 {
     margin-top: 20px;
   }
+
+  /* Main */
+  main {
+    margin-top: 35px;
+  }
+
+  section {
+    padding: 0;
+  }
 }
 
 /* Desktop  */
@@ -154,6 +225,7 @@ header {
     align-items: center;
   }
 
+  /* Header */
   .recipe-card {
     min-height: 50vh;
     margin-top: 50px;
