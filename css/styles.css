@@ -58,13 +58,13 @@ header {
   object-fit: cover;
 }
 
-header .header-img img {
+.header-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-header .header-content {
+.header-content {
   padding: 15px;
   width: 100%;
   height: 60%;
@@ -72,7 +72,7 @@ header .header-content {
   flex-direction: column;
 }
 
-header .header-content .heading {
+.header-content .heading {
   margin-top: 5px;
   height: 20%;
   font-family: youngSerif;
@@ -80,13 +80,13 @@ header .header-content .heading {
   color: var(--stone-900);
 }
 
-header .header-content .desc {
+.header-content .desc {
   font-size: 1.1rem;
   text-align: left;
   height: 35%;
 }
 
-header .header-content .prep-time {
+.header-content .prep-time {
   background-color: var(--rose-50);
   padding: 15px;
   display: flex;
@@ -98,16 +98,16 @@ header .header-content .prep-time {
   height: 45%;
 }
 
-header .header-content .prep-time h3 {
+.header-content .prep-time h3 {
   color: var(--rose-800);
 }
 
-header .header-content .prep-time ul {
+.header-content .prep-time ul {
   padding: 10px 5% 0 5%;
   margin-left: 10px;
 }
 
-header .header-content .prep-time li {
+.header-content .prep-time li {
   padding-top: 5px;
   font-size: 1.2rem;
 }
@@ -132,19 +132,17 @@ header .header-content .prep-time li {
     height: 80vh;
   }
 
-  header .header-content {
+  .header-content {
     padding: 0;
   }
-  header .header-content .heading {
+  .header-content .heading,
+  .header-content .desc,
+  .header-content .prep-time {
     font-size: 1.5rem;
   }
 
-  header .header-content .heading h1 {
+  .header-content .heading h1 {
     margin-top: 20px;
-  }
-
-  header .header-content .desc {
-    font-size: 1.5rem;
   }
 }
 
@@ -162,10 +160,6 @@ header .header-content .prep-time li {
   }
 
   header {
-    height: 80vh;
-  }
-
-  header .header-content .prep-time {
-    padding: 20px;
+    min-height: 80vh;
   }
 }
