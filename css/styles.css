@@ -40,6 +40,8 @@ body {
 .container {
   min-height: 100vh;
   background-color: var(--stone-100);
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -116,8 +118,9 @@ header {
 
 /* Main */
 section {
-  min-height: 35vh;
+  min-height: 20vh;
   padding: 15px;
+  margin-top: 30px;
 }
 
 section h2 {
@@ -156,23 +159,49 @@ section .content .table {
 section .content .table .table-item {
   height: 50px;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  padding: 0 15px;
   align-items: center;
-  border-bottom: 1px solid var(--stone-100-fade);
+  border-bottom: 1px solid rgba(70, 70, 70, 0.2);
 }
 
 section .content .table .table-item:last-of-type {
   border-bottom: none;
 }
+section .content .table .table-item strong,
+section .content .table .table-item p {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+section .content .table .table-item p {
+  padding-left: 5%;
+}
 
 section .content .table .table-item strong {
   color: var(--brown-800);
+  height: 100%;
+  margin-left: 50px;
+  width: 50%;
 }
 
 section hr {
   color: var(--stone-100);
   margin-top: 35px;
   opacity: 0.4;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  /* background-color: var(--stone-1); */
+  color: var(--stone-600);
 }
 
 /* Media Queries */
@@ -229,6 +258,7 @@ section hr {
   .recipe-card {
     min-height: 50vh;
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 
   header {
