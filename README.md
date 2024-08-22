@@ -23,9 +23,9 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
-- Gituhb Repo URL: (https://github.com/ZounMedia/recipe-page)
+- Solution URL: (https://www.frontendmentor.io/solutions/htmlcss-recipe-page-gqw1J9UenB)
+- Live Site URL: (https://recipe-page-eight-sigma.vercel.app/)
+- Gituhb Repo URL: (https://github.com/rzounlom/recipe-page)
 
 ## My process
 
